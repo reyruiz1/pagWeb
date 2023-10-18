@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>King's Bikes </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="head">
+    <div class="logo">
+    
+        <a href="#">KING'S BIKES</a>
+        
+
+    </div>
+
+    <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#sucursales">Sucursales</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    
+
+  </div>
+  <header id="inicio" class="content header">
+    <h2 class="title">Inicio</h2>
+    <p>
+        Descubre el placer de pedalear y encuentra la bicicleta perfecta para tu aventura. 
+        En King's Bikes, nos apasiona el ciclismo y queremos compartir esa pasión contigo.
+    </p>
+    <div class="btn-home">
+        <a href="#" class="btn">Saber mas</a>
+        
+    </div>
+  </header>
+  <section id="productos" class="content sau">
+    <h2 class="title">Productos</h2>
+    <p>
+        En King's Bikes, te ofrecemos una amplia selección de bicicletas diseñadas para cada tipo de ciclista.
+         Ya sea que busques una bicicleta de montaña resistente, una bicicleta de ruta veloz o una bicicleta 
+         urbana elegante, tenemos algo para ti.
+    </p>
+    
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-mountain"></i>
+            <h3>MOUNTAIN BIKE</h3>
+            <p>Explora los Senderos, descubre la emoción de las aventuras fuera de camino</p>
+            <div class="btn-home">
+                <a href="#" class="btn">Saber mas</a>
+                
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-road"></i>
+            <h3>ROAD BIKE</h3>
+            <p>Velocidad sobre Ruedas, experimenta la libertad de viajes rápidos en la carretera</p>
+            <div class="btn-home">
+                <a href="#" class="btn">Saber mas</a>
+                
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-bicycle"></i>
+            <h3>URBAN BIKE</h3>
+            <p> Estilo en Movimiento, recorre la jungla urbana con comodidad y estilo</p>
+            <div class="btn-home">
+                <a href="#" class="btn">Saber mas</a>
+                
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+  <section id="nosotros" class="content about">
+    <h2 class="title">Nosotros</h2>
+    <p>
+        Hola, somos King's Bikes, una tienda apasionada por el ciclismo y dedicada a ofrecerte la mejor 
+        experiencia en bicicletas. Nuestro fundador, Reynaldo Ruiz, estableció King's Bikes con la visión 
+        de inspirar a las personas a abrazar el estilo de vida activo y saludable que el ciclismo puede 
+        ofrecer.
+    </p>
+    <p>En King's Bikes, no solo vendemos bicicletas; compartimos la pasión pors el ciclismo y estamos aquí 
+        para asistirte en cada paso de tu viaje en bicicleta. Ya sea que seas un ciclista experimentado o 
+        estés comenzando, estamos aquí para ayudarte a encontrar la bicicleta perfecta y brindarte el apoyo
+         que necesitas para disfrutar al máximo tu experiencia ciclista.</p>
+    <a href="#" class="btn">saber mas</a>
+
+  </section>
+  <section id="sucursales" class="content price">
+    <article class="contain">
+        <h2 class="title">Sucursales</h2>
+        <p>
+            "Navegamos las calles de la hermosa Cochabamba, posicionando nuestras tiendas estratégicamente 
+            para atender a toda la población ciclista. ¡Descubre el ciclismo con King's Bikes y pedalea 
+            hacia la aventura!"
+        </p>
+        <a href="#" class="btn">Nuestras tiendas</a>
+
+    </article>
+
+  </section>
+  <section id="contacto" class="content contact">
+    <div class="contact-info">
+      <h2 class="title">Contacto</h2>
+      <p>Ponte en contacto con nosotros a través de:</p>
+      <ul>
+        <li><a href="reynaldo.ruiz@ucb.edu.bo">reynaldo.ruiz@ucb.edu.bo</a> (Email)</li>
+        <li><a href="+59165774144">+591 65774144</a> (Teléfono)</li>
+      </ul>
+    </div>
+  
+    <div class="map">
+      <h2 class="title">Ubicación</h2>
+      <img src="img2/map.png" alt="mapa">
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2023 King's Bikes. Todos los derechos reservados.</p>
+</footer>
+<script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
